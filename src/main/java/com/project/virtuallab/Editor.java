@@ -39,9 +39,6 @@ public class Editor {
 	private JFrame frame;
 	private int currline = 1;
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -193,10 +190,25 @@ public class Editor {
 		gbc_panel_5.gridy = 1;
 		panel_3.add(panel_5, gbc_panel_5);
 		
-		JLabel lblNewLabel_2 = new JLabel("Sanchay Kumar");
+		JLabel lblNewLabel_2 = new JLabel("Student 1");
 		lblNewLabel_2.setBackground(new Color(200, 200, 200));
 		lblNewLabel_2.setIcon(imageIcon);
 		panel_5.add(lblNewLabel_2);
+		
+		
+		JPanel panel_6 = new JPanel();
+		panel_6.setBorder(BorderFactory.createEmptyBorder(10, 0, 0, 0));
+		GridBagConstraints gbc_panel_6 = new GridBagConstraints();
+		gbc_panel_6.fill = GridBagConstraints.BOTH;
+		gbc_panel_6.gridx = 0;
+		gbc_panel_6.gridy = 2;
+		panel_3.add(panel_6, gbc_panel_6);
+		
+		JLabel lblNewLabel_3 = new JLabel("Student 2");
+		lblNewLabel_3.setBackground(new Color(200, 200, 200));
+		lblNewLabel_3.setIcon(imageIcon);
+		panel_6.add(lblNewLabel_3);
+		
 		
 		JPopupMenu popupMenu = new JPopupMenu("ffffff");
 		JMenuItem removeOpt = new JMenuItem("Remove");  
